@@ -8,6 +8,8 @@ var App = {
       city: "Seattle",
       thing: null,
       instrument: "",
+      games: ["wingspan", "dominion", "cribbage"],
+      newGame: "",
     };
   },
   methods: {
@@ -28,6 +30,13 @@ var App = {
       console.log("chaning the name to Jeff");
       this.name = "Jeff";
       console.log(this.name);
+    },
+    addGame: function () {
+      console.log("adding game to games array");
+      console.log(this.newGame);
+      console.log(this.games);
+      this.games.push(this.newGame);
+      console.log(this.games);
     },
   },
 };

@@ -28,6 +28,11 @@
       <p>enter a new name: <input type="text" v-model="name"></p>
       <p>the new name entered is: {{ name }}</p>
       <hr>
+      <div v-for="games in games">
+        {{ games }}
+      </div>
+      <input type="text" v-model="newGame"> <button v-on:click="addGame()">Add Game</button>
+      <hr>
       <p>this is some example text<br>to test the break tag</p>
     </div>
   </body>
