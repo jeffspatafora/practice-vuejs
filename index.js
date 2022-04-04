@@ -6,11 +6,17 @@ var App = {
       message: "Hello from JavaScript!",
       name: "Jeff",
       city: "Seattle",
+      thing: null,
     };
   },
   methods: {
     doThis: function () {
       console.log("doing at thing...");
+      this.thing = "doing the thing here...";
+    },
+    removeTheThing: function () {
+      console.log("getting ride of the thing...");
+      this.thing = null;
     },
     changeNameKatie: function () {
       console.log("changing the name to Katie");
