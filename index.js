@@ -9,9 +9,17 @@ var App = {
     };
   },
   methods: {
-    changeName: function () {
+    doThis: function () {
+      console.log("doing at thing...");
+    },
+    changeNameKatie: function () {
       console.log("changing the name to Katie");
       this.name = "Katie";
+      console.log(this.name);
+    },
+    changeNameJeff: function () {
+      console.log("chaning the name to Jeff");
+      this.name = "Jeff";
       console.log(this.name);
     },
   },

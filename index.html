@@ -13,9 +13,11 @@
       <h1>{{ name }}</h1>
       <p>{{ city }}</p>
       <hr>
+      <button v-on:click="doThis()">do a thing</button>
       <hr>
-      <button v-on:click="changeName()">change the name to Katie</button>
+      <button v-on:click="changeNameKatie()">change the name to Katie</button>
       <hr>
+      <button v-on:click="changeNameJeff()">change the name to Jeff</button>
       <hr>
       <p>this is some example text<br>to test the break tag</p>
     </div>
