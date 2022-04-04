@@ -9,7 +9,15 @@
   <body>
     <h1>Hello from HTML!</h1>
     <div id="app">
-      {{ message }}
+      <h1>{{ message }}</h1>
+      <h1>{{ name }}</h1>
+      <p>{{ city }}</p>
+      <hr>
+      <hr>
+      <button v-on:click="changeName()">change the name to Katie</button>
+      <hr>
+      <hr>
+      <p>this is some example text<br>to test the break tag</p>
     </div>
   </body>
 </html>
