@@ -7,6 +7,7 @@ var App = {
       name: "Jeff",
       city: "Seattle",
       thing: null,
+      instrument: "",
     };
   },
   methods: {
