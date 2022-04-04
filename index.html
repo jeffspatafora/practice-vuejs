@@ -33,6 +33,12 @@
       </div>
       <input type="text" v-model="newGame"> <button v-on:click="addGame()">Add Game</button>
       <hr>
+      <hr>
+      <div>
+        <button v-on:click="toggleInfo()">Toggle Extra Info</button>
+        <p v-if="showInfo">Extra Information</p>
+      </div>
+      <hr>
       <p>this is some example text<br>to test the break tag</p>
     </div>
   </body>

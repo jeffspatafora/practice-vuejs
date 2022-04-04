@@ -10,6 +10,7 @@ var App = {
       instrument: "",
       games: ["wingspan", "dominion", "cribbage"],
       newGame: "",
+      showInfo: false,
     };
   },
   methods: {
@@ -37,6 +38,14 @@ var App = {
       console.log(this.games);
       this.games.push(this.newGame);
       console.log(this.games);
+    },
+    toggleInfo: function () {
+      console.log("toggling info");
+      if (this.showInfo === true) {
+        this.showInfo = false;
+      } else {
+        this.showInfo = true;
+      }
     },
   },
 };
